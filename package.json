@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "yarn sass-dev",
-    "sass-dev": "sass --watch --update --style=expanded src/index.scss:public/styles.css",
-    "sass-prod": "sass --watch --update --style=compressed src/index.scss:public/styles.css"
+    "sass-dev": "sass --watch --update --style=expanded src/styles/index.scss:public/styles.css",
+    "sass-prod": "sass --watch --update --style=compressed src/styles/index.scss:public/styles.css"
   },
   "dependencies": {},
   "devDependencies": {
