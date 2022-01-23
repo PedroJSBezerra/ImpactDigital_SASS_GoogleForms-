@@ -1,0 +1,36 @@
+.section-column-form {
+  background: var(--form-color);
+  padding: 1rem 2rem 2rem;
+  max-width: 425px;
+
+  &__title, &__description {
+    color: var(--white-text);
+    margin: 1rem 0;
+  }
+
+  input, button {
+    border: none;
+    padding: .5rem;
+    min-width: 100%;
+  }
+
+  input {
+    border-radius: 4px;
+    color: var(--dark-text);
+    font-size: .9rem;
+  }
+  
+  button {
+    border-radius: 20px;
+    background: var(--green-button);
+    color: var(--white-text);
+    font-weight: 400;
+    font-size: 1rem;
+
+    &:hover {
+      background: var(--green-button-hover);
+      color: var(--green-button-text-hover);
+      cursor: pointer;
+    }
+  }
+}
