@@ -1,19 +1,17 @@
+@import './@mixins';
+
 .section {
-
-  &-column-card {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    padding: 0 20px;
-
-    &__title, &__description {
-      margin: 10px;
-    }
-
-    &__icon {
-      width: 100px;
-      margin-bottom: 20px;
-    }
+  @include mobile {
+    padding: 1rem;
+  }
+  
+  @include tablet {
+    padding: 1rem;
+  }
+  
+  @include desktop {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
   }
 }

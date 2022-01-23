@@ -1,24 +1,8 @@
 .header {
   background: var(--primary-blue);
-  color: var(--white-text);
-  padding: 0 20px;
-  overflow: hidden;
-
-  &-logo {
-    margin: 20px 0;
-
-    &__image {
-      max-width: 100%;
-    }
-  }
   
-  &-title {
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  &-description {
-    margin: 20px 0;
+  &__title, &__description {
+    color: var(--white-text);
     text-align: center;
   }
 }
