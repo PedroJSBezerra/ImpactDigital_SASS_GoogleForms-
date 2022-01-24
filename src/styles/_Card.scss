@@ -1,5 +1,25 @@
+@import './@mixins.scss';
+
 .card {
   align-items: center;
   display: flex;
-  flex-direction: column;
+
+  @include mobile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__icon, &__column {
+    margin: 1rem;
+  }
+
+  &__icon {
+    max-width: 100px;
+  }
+
+  &__title, &__description {
+    margin: 1rem 0;
+  }
 }

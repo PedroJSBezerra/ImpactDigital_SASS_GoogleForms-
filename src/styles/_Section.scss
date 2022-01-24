@@ -1,17 +1,27 @@
 @import './@mixins';
 
 .section {
+
   @include mobile {
     padding: 1rem;
   }
   
   @include tablet {
+    display: flex;
     padding: 1rem;
   }
   
   @include desktop {
+    display: flex;
     margin: 0 auto;
     max-width: 1200px;
     padding: 1rem;
+  }
+
+  &-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
