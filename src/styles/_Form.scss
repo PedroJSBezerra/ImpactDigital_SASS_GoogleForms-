@@ -2,6 +2,15 @@
   background: var(--form-color);
   padding: 1rem 2rem 2rem;
   max-width: 425px;
+  min-height: 425px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:hover {
+    box-shadow: 3px 2px 4px #999;
+  }
 
   &__title, &__description {
     color: var(--white-text);

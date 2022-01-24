@@ -20,7 +20,22 @@ body {
 }
 
 .header {
+  position: relative;
   background: var(--primary-blue);
+}
+.header:before {
+  background-image: url("https://lh5.googleusercontent.com/0K5mGReL1HTXrtbnC4oJ3Jf2mq--ygcQuweCnDH8UGHWsQ-HhZc6RSdwHNsAjBumvGqP0G3kq1IYtY-7WU9-91p_3gbWqKI4A4Hm51jRZGVmLdSpagpXmixrTS52CdCCAQ=w400");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: opacity(0.5) brightness(0.8);
+}
+.header .section {
+  position: relative;
 }
 .header__logo {
   max-width: 100%;
@@ -32,21 +47,27 @@ body {
   color: var(--white-text);
   text-align: center;
 }
+@media screen and (min-width: 426px) and (max-width: 1023px) {
+  .header .section-column {
+    display: block;
+  }
+}
 @media screen and (min-width: 1024px) {
   .header .section-column {
     display: block;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
   .section {
     padding: 1rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 426px) and (max-width: 1023px) {
   .section {
     display: flex;
     padding: 1rem;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -62,16 +83,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .card {
   align-items: center;
   display: flex;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
   .card {
-    align-items: center;
-    display: flex;
     flex-direction: column;
     text-align: center;
   }
@@ -80,7 +100,10 @@ body {
   margin: 1rem;
 }
 .card__icon {
+  min-width: 100px;
   max-width: 100px;
+  min-height: 100px;
+  max-height: 100px;
 }
 .card__title, .card__description {
   margin: 1rem 0;
@@ -90,6 +113,14 @@ body {
   background: var(--form-color);
   padding: 1rem 2rem 2rem;
   max-width: 425px;
+  min-height: 425px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form:hover {
+  box-shadow: 3px 2px 4px #999;
 }
 .form__title, .form__description {
   color: var(--white-text);
@@ -116,6 +147,14 @@ body {
   background: var(--green-button-hover);
   color: var(--green-button-text-hover);
   cursor: pointer;
+}
+
+.footer {
+  background: var(--primary-blue);
+  margin-top: 4rem;
+}
+.footer__text {
+  color: var(--white-text);
 }
 
 /*# sourceMappingURL=styles.css.map */
